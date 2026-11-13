@@ -5,3 +5,7 @@ Staff hub for editing CCC sites in Pages CMS. Each card links straight to that s
 - `content/sites.json`: the list of sites. Add a site here (or in Pages CMS under "1. Sites") when it moves onto Pages CMS.
 - `content/page.json`: heading, intro, how-to steps, help contact.
 - `src/template.html` + `build.js` build `index.html`. Netlify runs `node build.js` on every deploy.
+
+## Adding a new site (checklist)
+1. Add the site to `content/sites.json` (or in Pages CMS under "1. Sites").
+2. In Pages CMS, open the new repo > Collaborators > Invite: maried@cccomaha.org, katew@cccomaha.org.
