@@ -1,0 +1,85 @@
+# Pages CMS configuration for edit.cccomaha.org (the staff site editor hub)
+# Saving commits to GitHub; Netlify rebuilds the page in about a minute.
+# Text boxes accept **bold**, *italic* and [link text](https://...).
+
+settings:
+  commit:
+    identity: user   # record who made each change
+
+media:
+  input: images
+  output: /images
+  rename: safe
+  extensions: [jpg, jpeg, png, webp, svg]
+
+content:
+  # ---------------------------------------------------------------
+  - name: sites
+    label: "1. Sites"
+    type: file
+    path: content/sites.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Site name
+        type: string
+        required: true
+        description: The bold name at the top of the site's card.
+      - name: purpose
+        label: What it's for
+        type: string
+        description: The short gray line under the name, for example Women's conference.
+      - name: repo
+        label: Pages CMS project name
+        type: string
+        required: true
+        description: The site's repository name in ccc-omaha, for example thrive-gathering. Powers the Edit button.
+      - name: url
+        label: Live site address
+        type: string
+        required: true
+        description: The full https:// address. Shown on the card and used by the View button.
+      - name: color
+        label: Card color
+        type: select
+        description: The colored stripe across the top of the card.
+        options:
+          values:
+            - { name: "#0083E0", label: Blue }
+            - { name: "#633498", label: Purple }
+            - { name: "#D81159", label: Magenta }
+            - { name: "#FF8017", label: Orange }
+            - { name: "#FFC72C", label: Yellow }
+            - { name: "#8DE2E0", label: Aqua }
+            - { name: "#CCF5DC", label: Mint }
+            - { name: "#00003D", label: Navy }
+
+  # ---------------------------------------------------------------
+  - name: page
+    label: "2. Page text"
+    type: file
+    path: content/page.json
+    format: json
+    fields:
+      - name: heading
+        label: Heading
+        type: string
+        description: The big white heading at the top of the page.
+      - name: intro
+        label: Intro paragraph
+        type: text
+        description: The paragraph under the heading.
+      - name: steps
+        label: How editing works
+        type: text
+        list: true
+        description: The numbered steps in the white card under the sites. One step per item.
+      - name: helpName
+        label: Help contact name
+        type: string
+        description: Shown in the Need a hand card.
+      - name: helpEmail
+        label: Help contact email
+        type: string
+        description: Shown in the Need a hand card as a clickable email link.

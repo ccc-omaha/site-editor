@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Thrive Gathering",
+    "purpose": "Women's conference",
+    "repo": "thrive-gathering",
+    "url": "https://thethrivegathering.com",
+    "color": "#D81159"
+  },
+  {
+    "name": "Christmas with CCC",
+    "purpose": "Christmas services and invites",
+    "repo": "christmas-with-ccc",
+    "url": "https://christmaswithccc.com",
+    "color": "#633498"
+  },
+  {
+    "name": "Men of Integrity",
+    "purpose": "Men's group",
+    "repo": "men-of-integrity",
+    "url": "https://findintegrity.com",
+    "color": "#FF8017"
+  },
+  {
+    "name": "27 Churches by 2027",
+    "purpose": "Church plant wall",
+    "repo": "27-churches",
+    "url": "https://27.cccomaha.org",
+    "color": "#8DE2E0"
+  },
+  {
+    "name": "Reach One More",
+    "purpose": "Initiative archive",
+    "repo": "reach-one-more",
+    "url": "https://reachonemore.cccomaha.org",
+    "color": "#FFC72C"
+  },
+  {
+    "name": "Science & Faith Conference",
+    "purpose": "2024 conference archive",
+    "repo": "science-and-faith",
+    "url": "https://scienceandfaithconference.com",
+    "color": "#0083E0"
+  }
+]

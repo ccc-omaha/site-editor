@@ -1,0 +1,12 @@
+{
+  "heading": "Edit a CCC site",
+  "intro": "Pick the site you want to change. **Edit** opens it in Pages CMS. **View** opens the live site so you can check your work.",
+  "steps": [
+    "Use the sign-in link Pages CMS emailed you. You only see the sites you've been invited to.",
+    "Each site's sidebar follows the page from top to bottom, and every field says where it shows up.",
+    "Click **Save**. The live site updates in about a minute.",
+    "Keep photos under 1 MB. Every save is kept in history, so any change can be undone."
+  ],
+  "helpName": "Eric Wendt",
+  "helpEmail": "ericw@cccomaha.org"
+}

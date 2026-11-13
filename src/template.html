@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edit a CCC site</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#00003D">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://use.typekit.net/ohw6ayv.css">
+<style>
+  :root{--navy:#00003D;--cream:#FBEFDA;--blue:#0083E0;--ink:#14142B;--sans:"proxima-nova","Helvetica Neue",Arial,sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);background:var(--cream);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{text-wrap:balance} p,li{text-wrap:pretty}
+  a{color:inherit}
+  .wrap{width:min(1080px,100% - 40px);margin-inline:auto}
+  header{background:var(--navy);color:#fff;padding:28px 0 120px}
+  header img{height:30px;width:auto;display:block}
+  .hero{padding-top:56px}
+  .eyebrow{font-weight:700;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:#FFC72C}
+  h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800;letter-spacing:-.01em;line-height:1.05;margin-top:10px}
+  .intro{max-width:620px;margin-top:16px;font-size:1.1rem;opacity:.9}
+  main{margin-top:-80px;padding-bottom:64px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:18px}
+  .site{background:#fff;border-radius:10px;padding:26px 24px 22px;box-shadow:0 10px 30px rgba(0,0,61,.08);border-top:6px solid var(--c);display:flex;flex-direction:column}
+  .site h2{font-size:1.35rem;font-weight:800;line-height:1.2}
+  .site .purpose{color:#5a5a75;margin-top:4px}
+  .site .url{font-size:.85rem;color:#8a8aa3;margin-top:14px;word-break:break-all}
+  .actions{display:flex;gap:10px;margin-top:18px}
+  .btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 14px;border-radius:999px;font-weight:700;font-size:.95rem;text-decoration:none;transition:transform .15s,background .15s}
+  .btn:hover{transform:translateY(-1px)}
+  .edit{background:var(--navy);color:#fff}
+  .edit:hover{background:#1a1a6e}
+  .view{border:2px solid #d9d9e6;color:var(--navy)}
+  .view:hover{border-color:var(--navy)}
+  .btn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .how{margin-top:48px;display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:start}
+  .card{background:#fff;border-radius:10px;padding:28px}
+  .card h3{font-size:1.1rem;font-weight:800;margin-bottom:14px}
+  ol{list-style:none;counter-reset:s;display:grid;gap:14px}
+  ol li{counter-increment:s;position:relative;padding-left:40px}
+  ol li::before{content:counter(s);position:absolute;left:0;top:-1px;width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-weight:700;font-size:.85rem;display:grid;place-items:center}
+  .help p{color:#5a5a75}
+  .help a{font-weight:700;color:var(--blue)}
+  footer{padding:24px 0 40px;font-size:.85rem;color:#8a8aa3}
+  footer a{color:#5a5a75}
+  @media (max-width:760px){.how{grid-template-columns:1fr}header{padding-bottom:110px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="images/ccc-logo.webp" alt="Christ Community Church">
+    <div class="hero">
+      <p class="eyebrow">Comm Team · Staff only</p>
+      <h1>{{heading}}</h1>
+      <p class="intro">{{intro}}</p>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <div class="grid">{{sites}}
+    </div>
+    <div class="how">
+      <div class="card">
+        <h3>How editing works</h3>
+        <ol>{{steps}}
+        </ol>
+      </div>
+      <div class="card help">
+        <h3>Need a hand?</h3>
+        <p>Not seeing a site, or something looks off after you save? Contact {{helpName}} at <a href="mailto:{{helpEmail}}">{{helpEmail}}</a>.</p>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="wrap">Christ Community Church · <a href="{{selfEdit}}">Add or update a site on this page</a></div>
+</footer>
+</body>
+</html>
