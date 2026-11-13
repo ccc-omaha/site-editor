@@ -1,5 +1,12 @@
 [
   {
+    "name": "ESL Omaha",
+    "purpose": "Free English classes",
+    "repo": "esl-omaha",
+    "url": "https://eslomaha.com",
+    "color": "#CCF5DC"
+  },
+  {
     "name": "Thrive Gathering",
     "purpose": "Women's conference",
     "repo": "thrive-gathering",
