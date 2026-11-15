@@ -54,5 +54,19 @@
     "repo": "science-and-faith",
     "url": "https://scienceandfaithconference.com",
     "color": "#0083E0"
+  },
+  {
+    "name": "CCC Church Residency",
+    "purpose": "Two-year residency for recent grads",
+    "repo": "ccc-residency",
+    "url": "https://cccresidency.org",
+    "color": "#F6CBE1"
+  },
+  {
+    "name": "CCC Archive",
+    "purpose": "Message series resources and past pages",
+    "repo": "ccc-archive",
+    "url": "https://cccarchive.com",
+    "color": "#FBEFDA"
   }
 ]
