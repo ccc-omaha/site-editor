@@ -68,5 +68,12 @@
     "repo": "ccc-archive",
     "url": "https://cccarchive.com",
     "color": "#FBEFDA"
+  },
+  {
+    "name": "unCOMFORTABLE Podcast",
+    "purpose": "Culture and Christianity podcast",
+    "repo": "uncomfy",
+    "url": "https://uncomfy.org",
+    "color": "#8DE2E0"
   }
 ]
