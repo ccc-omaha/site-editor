@@ -69,12 +69,12 @@ content:
       - name: intro
         label: Intro paragraph
         type: text
-        description: The paragraph under the heading.
+        description: "The paragraph under the heading. For italics, put one star (asterisk) on each side of the words. For bold, put two stars on each side."
       - name: steps
         label: How editing works
         type: text
         list: true
-        description: The numbered steps in the white card under the sites. One step per item.
+        description: "The numbered steps in the white card under the sites. One step per item. For italics, put one star (asterisk) on each side of the words. For bold, put two stars on each side."
       - name: helpName
         label: Help contact name
         type: string
